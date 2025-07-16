@@ -10,11 +10,11 @@ Review the current branch for conflicts with the development branch, resolve the
 ## Implementation
 
 <extended-thinking>
-The user wants a command that:
-1. Reviews current branch for conflicts with development branch
-2. If conflicts exist, research each one and suggest modifications
-3. Once conflicts are resolved (or if none exist), create a pull request
-4. Include detailed summary of all changes in PR
+1. If there are uncommited changes - commit them and push to origin
+2. Review current branch for conflicts with development branch
+3. If conflicts exist, research each one and suggest modifications
+4. Once conflicts are resolved (or if none exist), create a pull request
+5. Include detailed summary of all changes in PR
 
 I need to:
 - Fetch latest changes from remote
