@@ -61,6 +61,7 @@ A brief Impact: section could be beneficial, outlining who or what this feature 
 ## Mark To Dos Done
 - check /docs/to_do
 _ if there is a to_do item for this feature mark it completed by putting in /docs/to_do/completed
+- if you are working on a jira ticket mark it as done
 
 ## Check in
 Check file changes in git associated with this fix and push to origin 
