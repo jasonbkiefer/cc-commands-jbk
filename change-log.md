@@ -12,7 +12,7 @@ Creates a change log entry for the feature that was just completed in the curren
 
 1. First, run `date "+%Y-%m-%d"` to get the current date
 2. Use that exact date output in the filename (e.g., if the date command returns "2025-07-09", use that in the filename)
-3. Create a new entry markdown file in the /docs/change_log/ folder to record the following information for the feature that was just completed (everything in the current chat):  
+3. Create a new entry markdown file in the /docs/change_log/pending folder to record the following information for the feature that was just completed (everything in the current chat):  
 
 The .md file should have the following format and information:  
 **File Name: YYYY-MM-DD_Feature_Name** (IMPORTANT: First run `date "+%Y-%m-%d"` to get the current date and use that exact date in the filename - don't type the date manually)
@@ -51,12 +51,12 @@ A brief Impact: section could be beneficial, outlining who or what this feature 
 * Reference or link to Jira ticket if given
 
 ## Files to Reference
-- `/docs/change_log/` - Directory where change logs are stored
+- `/docs/change_log/pending` - Directory where change logs are stored
 
 ## Notes
 - This command should analyze the current chat session to extract feature details
 - Automatically generate the file name with current date
-- Create the file in the `/docs/change_log/` directory
+- Create the file in the `/docs/change_log/pending` directory
 
 ## Mark To Dos Done
 - check /docs/to_do
