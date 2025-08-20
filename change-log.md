@@ -10,7 +10,7 @@ Creates a change log entry for the feature that was just completed in the curren
 
 ## Implementation
 
-1. First, run `date "+%Y-%m-%d"` to get the current date
+1. First, run `date "+%Y-%m-%d"` to get the current date and check the current branch
 2. Use that exact date output in the filename (e.g., if the date command returns "2025-07-09", use that in the filename)
 3. Create a new entry markdown file in the /docs/change_log/pending folder to record the following information for the feature that was just completed (everything in the current chat):  
 
