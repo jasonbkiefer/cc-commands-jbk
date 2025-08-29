@@ -40,6 +40,7 @@ When this command is invoked, you should:
    - Identify files that need modification
    - Suggest any testing approach
    - Note potential risks or considerations
+   - Generally persue the simplest possible solution to minimize implementation risks
 
 
 **IMPORTANT**: Do NOT write or modify any code. Only research, analyze, and propose solutions.
