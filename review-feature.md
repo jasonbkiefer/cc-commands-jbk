@@ -1,5 +1,7 @@
 # Command: feature-review
 
+ultrathink
+
 Thoroughly research and analyze an issue or feature request, then propose a solution without implementing code.
 
 ## Usage

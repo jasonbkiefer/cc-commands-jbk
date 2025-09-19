@@ -1,5 +1,7 @@
 # Command: jira-ticket
 
+ultrathink
+
 Creates a new Jira ticket in the WD project using the specified format with component, difficulty, and impact fields.
 DO NOT CODE. This is ticket research, writing and posting only. No fixing. 
 
