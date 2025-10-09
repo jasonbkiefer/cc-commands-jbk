@@ -4,6 +4,7 @@ Thoroughly research and analyze an issue or feature request, then propose a solu
 
 ## Usage
 /analyze <issue-description>
+If no issue is added or it is only an image then ask the user for details. 
 
 ## Example
 /analyze The live chat system is disconnecting after 5 minutes of inactivity

@@ -16,7 +16,7 @@ When this command is invoked, you should execute ALL phases autonomously:
 
 ### Phase 1: Branch Creation
 - Extract a short project name from the description (2-3 words, kebab-case)
-- Create a new git branch: `jason/skunk/[project-name]` from `development`
+- Create a new git branch: `jason/skunk/[project-name]` from `development` (make sure to get a fresh git pull)
 - Switch to the new branch
 
 ### Phase 2: Research Phase
