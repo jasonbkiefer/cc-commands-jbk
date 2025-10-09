@@ -87,10 +87,11 @@ After analyzing conflicts (if any), I will:
      - File history
    - Apply the resolution
 
-2. **Generate PR summary** including:
-   - List of all commits
-   - Files changed with brief description
-   - Conflict resolutions applied (if any)
+2. **Generate PR summary**:
+   - review all /docs/change_log/pending files for descriptions of changed functionality
+   - review all commits and see if other changes were made
+   - Summarize the functionality changes that were introduced  
+   - Include files changed with brief description of why
    - Testing recommendations
    - Any breaking changes or important notes
 
@@ -99,7 +100,8 @@ After analyzing conflicts (if any), I will:
    gh pr create --base development --title "[Branch Name] - Feature/Fix Description" --body "generated-summary"
    ```
 
+4. Move all change_logs from the pending folder to the appropriate month in the completed folder
+
 ## Notes
-- Requires GitHub CLI (`gh`) to be installed and authenticated
 - Will not push changes without user confirmation
 - Provides detailed analysis before making any changes
