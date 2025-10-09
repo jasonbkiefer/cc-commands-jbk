@@ -62,5 +62,5 @@ Based on the issue, dynamically determine which files to examine. Common startin
 - Consider system-wide implications
 - Focus on understanding before suggesting fixes
 - Present findings in a clear, structured format
-- do not suggest a timeline as all coding will be done by and agent in hours - not days or weeks
+- do not suggest a timeline or state time to implement at all (ll coding will be done by and agent in minutes - not days or weeks)
 - assume all coding will be done by an agent and prepare you responses with this in mind
