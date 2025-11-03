@@ -35,7 +35,7 @@ When this command is invoked, you should:
    - Check for recent changes that might have introduced the issue
 
 4. **Solution Proposal**
-   - In a new md file in /docs/to_do (include YYYY-MM-DD in file name)
+   - In a new md file in /docs/to_do (include YYYY-MM-DD in file name) and the user's name
    - Present a detailed solution plan
    - Explain the root cause
    - Outline implementation steps
