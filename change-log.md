@@ -62,6 +62,7 @@ A brief Impact: section could be beneficial, outlining who or what this feature 
 - check /docs/to_do
 _ if there is a to_do item for this feature mark it completed by putting in /docs/to_do/completed
 - if you are working on a jira ticket mark it as done
+- if you have worked on the MCP server or a MCP tool then intrement server/swim/mcp-server/MCP_VERSION by 1 in the 3rd position (minor)
 
 ## Check in
 Check file changes in git associated with this fix and push to origin 
