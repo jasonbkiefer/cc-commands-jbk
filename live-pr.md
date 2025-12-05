@@ -50,7 +50,10 @@ git log origin/live...origin/development --format='%an' | sort | uniq
 ### 5. Find Jira Tickets
 Search commit messages and change logs for Jira ticket references (patterns like ABC-123).
 
-### 6. Create the PR
+### 6. Clean Up Before Committing
+**IMPORTANT:** Delete any temporary diff output files before committing. Do not include raw diff output in the PR or commit history.
+
+### 7. Create the PR
 Create a PR from development → live with:
 - Title: `Release: [Date] - [Brief summary]`
 - Body: The user-focused Slack-ready summary from step 3
