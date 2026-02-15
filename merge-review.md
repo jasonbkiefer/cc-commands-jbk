@@ -15,6 +15,7 @@ Review the current branch for conflicts with the development branch, resolve the
 3. If conflicts exist, research each one and suggest modifications
 4. Once conflicts are resolved (or if none exist), create a pull request
 5. Include detailed summary of all changes in PR
+6. If the PR contians only admin/non-customer facing enhancements (and is not a bug ticket) then assign lable 'skip-qa' to the PR in Github
 
 I need to:
 - Fetch latest changes from remote
