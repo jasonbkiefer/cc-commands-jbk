@@ -105,3 +105,13 @@ After analyzing conflicts (if any), I will:
 ## Notes
 - Will not push changes without user confirmation
 - Provides detailed analysis before making any changes
+
+## Knowledge Registry Update
+
+After creating the PR, update the knowledge registry:
+
+1. Get the list of changed files from the PR diff
+2. For each changed file that has an org-knowledge entry:
+   - Call `mcp__swim-kb__search_org_knowledge { query: "[filename]", source_file: "[path]" }`
+   - If an entry exists, note it for re-analysis
+3. If any entries were found, inform the user: "Knowledge registry: [N] entries may need updating based on changed files. Run `/analyze-for-registry --stale` to refresh them."

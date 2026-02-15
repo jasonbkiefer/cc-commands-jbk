@@ -63,12 +63,17 @@ Always use the WishDesk project (WD)
 
 ## Workflow Steps
 1. Fetch and analyze the JIRA ticket
-2. Plan implementation using TodoWrite
-3. Implement the solution following project conventions
-4. Write and run tests
-5. Verify all acceptance criteria
-6. Update JIRA ticket with implementation details
-7. Present completed work to user for QA
+2. Search org-knowledge for existing context: `mcp__swim-kb__search_org_knowledge { query: "[ticket topic]" }`
+3. Plan implementation using TodoWrite
+4. Implement the solution following project conventions
+5. Write and run tests
+6. Verify all acceptance criteria
+7. Update JIRA ticket with implementation details
+8. **Knowledge Registry Update**: For each significant file changed or component built:
+   - Call `mcp__swim-kb__upsert_org_knowledge` with updated architecture knowledge
+   - Focus on what changed, why, and how the component now works
+   - Use category, source_repo, source_file, and tags for discoverability
+9. Present completed work to user for QA
 
 ## Notes
 - Always confirm database structure changes with user ("CONFIRMED" in all caps)

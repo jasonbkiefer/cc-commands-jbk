@@ -406,6 +406,22 @@ Step 6: Decision
 - Check for breaking changes in APIs
 - Validate database migration impact
 
+## Knowledge Registry Update
+
+After completing the review, save significant architectural findings to the org-knowledge registry:
+
+1. For each major component/system reviewed, call `mcp__swim-kb__upsert_org_knowledge` with:
+   - title: descriptive name (e.g., "CSAT Survey - Touchpoint Architecture")
+   - summary: what this component does and its key touchpoints
+   - content: data flows, integration points, break points discovered, and architectural patterns
+   - source_repo: current repo name
+   - source_file: primary file path for the component
+   - source_branch: current branch
+   - category: "architecture" or "business-logic"
+   - tags: relevant tags including the feature name
+2. Focus on reusable architectural knowledge - how systems connect, not issue-specific details
+3. Issue-specific findings should go to discoveries instead
+
 ## Completion Criteria
 
 - All user flows documented and validated

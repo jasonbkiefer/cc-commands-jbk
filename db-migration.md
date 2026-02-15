@@ -92,6 +92,22 @@ ALTER TABLE `{TABLE_NAME}`
 - `server/database-storage.ts`
 - `server/storage.ts`
 
+## Knowledge Registry Update
+
+After creating the migration, update the org-knowledge registry with the schema change:
+
+1. Call `mcp__swim-kb__upsert_org_knowledge` with:
+   - title: "[table_name] table schema" (e.g., "users table schema")
+   - summary: what changed and why
+   - content: updated column list, new relationships, business meaning of new fields
+   - source_type: "database-table"
+   - source_repo: current repo name
+   - source_file: migration file path
+   - source_branch: current branch
+   - category: "database-schema"
+   - tags: ["database", "migration", table_name]
+2. This keeps the knowledge registry in sync with schema changes
+
 ## Notes
 - Always check existing table structure before adding fields
 - Ensure migration is idempotent (can be run multiple times safely)

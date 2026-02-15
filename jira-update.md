@@ -13,6 +13,9 @@ Updates an existing Jira ticket by evaluating and enhancing it with comprehensiv
 This command will:
 
 1. **Retrieve Existing Ticket**: Fetch the current Jira ticket details using the provided ticket ID
+1b. **Search Org-Knowledge**: Before deep codebase research, search the knowledge registry for existing context:
+   - Call `mcp__swim-kb__search_org_knowledge { query: "[feature/system from ticket]" }` to find existing architectural knowledge
+   - Use findings to accelerate research and avoid re-discovering known patterns
 2. **Research Phase**: Thoroughly analyze the codebase to understand the feature/system mentioned in the ticket
    - Search for existing implementations and related code
    - Identify current architecture and patterns
@@ -42,6 +45,10 @@ This command will:
    - Testing strategy
    - Implementation approach
 8. **Update Ticket**: Use Atlassian MCP tools to update the ticket with enhanced information
+
+9. **Save to Knowledge Registry**: If research revealed important architectural insights:
+   - Save key findings as org-knowledge entries via `mcp__swim-kb__upsert_org_knowledge`
+   - Focus on reusable knowledge (architecture, component relationships) not ticket-specific details
 
 ### Component Options (for validation):
 - CRM

@@ -126,6 +126,21 @@ echo "3. Integrate the tool into workflows as needed"
 - `mcp-tool-test.html` - Test interface
 - `server/swim/services/queue-monitor.ts` - Queue monitor integration
 
+## Knowledge Registry Update
+
+After creating the new MCP tool, document it in the org-knowledge registry:
+
+1. Call `mcp__swim-kb__upsert_org_knowledge` with:
+   - title: "SWIM MCP Tool: [tool-name]"
+   - summary: what the tool does and its purpose
+   - content: input/output schema, which database tables/services it accesses, key business logic, and integration points
+   - source_repo: current repo name
+   - source_file: "server/swim/tools/[tool-name].ts"
+   - source_branch: current branch
+   - category: "architecture"
+   - tags: ["mcp", "swim", "tool", tool-name]
+2. This ensures future sessions know what MCP tools exist and how they work
+
 ## Notes
 - Ensure your tool follows the established patterns in existing tools
 - Use ToolError class for consistent error handling

@@ -39,7 +39,13 @@ When this command is invoked, you should:
    - Outline implementation steps
    - Identify files that need modification
    - Generally use the simplest approach to solving the issue or creating the feature
-   - Don't overcomplicate with robust solutions 
+   - Don't overcomplicate with robust solutions
+
+5. **Save to Knowledge Registry**
+   - If your analysis revealed important architectural insights, patterns, or business logic:
+   - Save key findings as org-knowledge entries via `mcp__swim-kb__upsert_org_knowledge`
+   - Focus on reusable knowledge (how systems work, why decisions were made) not issue-specific details
+   - Issue-specific details should go to discoveries instead
 
 
 **IMPORTANT**: Do NOT write or modify any code. Only research, analyze, and propose solutions.

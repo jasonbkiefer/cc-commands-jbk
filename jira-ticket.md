@@ -41,6 +41,10 @@ This command will create a Jira ticket with:
 
 I will:
 
+0. **Search Org-Knowledge First**: Before codebase research, search the knowledge registry for existing context:
+   - Call `mcp__swim-kb__search_org_knowledge { query: "[feature/system topic]" }` to find existing architectural knowledge
+   - Use findings to accelerate research and avoid re-discovering known patterns
+
 1. **Research Phase**: Thoroughly analyze the codebase to understand the feature/system in question
    - Search for existing implementations and related code
    - Identify current architecture and patterns
@@ -70,6 +74,11 @@ I will:
    - Testing strategy
 7. **Clarification**: Ask targeted questions if research reveals ambiguities
 8. **Ticket Creation**: Use Atlassian MCP tools to create the ticket with all findings
+
+9. **Save to Knowledge Registry**: If research revealed important architectural insights or patterns:
+   - Save key findings as org-knowledge entries via `mcp__swim-kb__upsert_org_knowledge`
+   - Focus on reusable knowledge (how systems work, component relationships) not ticket-specific details
+   - Ticket-specific details should go to discoveries instead
 
 ## Files to Reference
 - `.cursor/rules/jadd.mdc` - Jira ticket format specification
