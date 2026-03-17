@@ -82,7 +82,20 @@ Execute the plan autonomously:
 - Verify all todos are completed
 - Create a summary of what was built
 
-### Phase 8: Completion
+### Phase 8: Knowledge Registry Update
+- For each significant new component, architecture pattern, or system created:
+  - Call `mcp__swim-kb__upsert_org_knowledge` with:
+    - title: descriptive name of the component/feature
+    - summary: what it does and how it fits into the system
+    - content: architecture, key files, data flows, integration points, and important patterns
+    - source_repo: current repo name
+    - source_file: primary file path
+    - source_branch: current branch
+    - category: appropriate category (architecture, business-logic, etc.)
+    - tags: relevant tags including the project name
+- Focus on knowledge that would help future sessions understand what was built and why
+
+### Phase 9: Completion
 - Commit all changes to git with descriptive commit message
 - **ONLY THEN** stop and present to user:
   - Summary of what was built

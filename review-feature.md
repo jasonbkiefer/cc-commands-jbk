@@ -45,6 +45,13 @@ When this command is invoked, you should:
    - Generally persue the simplest possible solution to minimize implementation risks
 
 
+5. **Save to Knowledge Registry**
+   - If your analysis revealed important architectural insights, patterns, or business logic:
+   - Save key findings as org-knowledge entries via `mcp__swim-kb__upsert_org_knowledge`
+   - Focus on reusable knowledge (how systems work, why decisions were made) not issue-specific details
+   - Issue-specific details should go to discoveries instead
+
+
 **IMPORTANT**: Do NOT write or modify any code. Only research, analyze, and propose solutions.
 
 ## Files to Reference

@@ -64,5 +64,21 @@ _ if there is a to_do item for this feature mark it completed by putting in /doc
 - if you are working on a jira ticket mark it as done
 - if you have worked on the MCP server or a MCP tool then intrement server/swim/mcp-server/MCP_VERSION by 1 in the 3rd position (minor)
 
+## Knowledge Registry Update
+
+After creating the change log entry:
+
+1. Identify the main files/components that were changed in this feature
+2. For each significant file, call `mcp__swim-kb__upsert_org_knowledge` with:
+   - title: descriptive name of the component
+   - summary: what changed and why
+   - content: updated understanding of what this component does
+   - source_repo: current repo name
+   - source_file: relative path
+   - source_branch: current branch
+   - category: appropriate category
+   - tags: relevant tags
+3. This keeps the knowledge registry in sync with actual code changes
+
 ## Check in
 Check file changes in git associated with this fix and push to origin 
